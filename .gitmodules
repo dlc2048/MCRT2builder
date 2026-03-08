@@ -7,4 +7,7 @@
 	url = https://github.com/HunterBelanger/papillon-ndl
 [submodule "external/semver"]
 	path = external/semver
-	url = https://github.com/Neargye/semver/
+	url = https://github.com/Neargye/semver
+[submodule "MCRT2interface"]
+	path = MCRT2interface
+	url = https://github.com/dlc2048/MCRT2interface
