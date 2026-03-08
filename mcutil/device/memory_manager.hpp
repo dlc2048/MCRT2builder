@@ -27,6 +27,8 @@
 
 #pragma once
 
+#include <cstddef>
+
 
 namespace mcutil {
 
