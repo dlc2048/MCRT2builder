@@ -1,0 +1,10 @@
+[submodule "RT2interface"]
+	path = RT2interface
+	url = https://github.com/dlc2048/MCRT2interface
+	branch = master
+[submodule "external/PNDL"]
+	path = external/PNDL
+	url = https://github.com/HunterBelanger/papillon-ndl
+[submodule "external/semver"]
+	path = external/semver
+	url = https://github.com/Neargye/semver/

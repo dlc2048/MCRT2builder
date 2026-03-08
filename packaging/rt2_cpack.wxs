@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALL_ROOT">
+            <Component Id="MCRT2_ENV_SET" Guid="2567DB7B-3FF6-45E3-B21E-4F6B25250D25">
+                <CreateFolder/>
+                <Environment Id="MCRT2_PATH" Name="PATH" Action="set" System="yes" Permanent="no" Value="[INSTALL_ROOT]bin" Part="last" />
+                <Environment Id="MCRT2_HOME" Name="MCRT2_HOME" Action="set" Permanent="no" System="yes" Value="[INSTALL_ROOT]" Part="all" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

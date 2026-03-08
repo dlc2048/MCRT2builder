@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+echo "/usr/local/MCRT2/lib" > /etc/ld.so.conf.d/mcrt2.conf
+ldconfig
+
+ln -sf /usr/local/MCRT2/bin/RT2builder      /usr/local/bin/RT2builder
+ln -sf /usr/local/MCRT2/bin/RT2interactive  /usr/local/bin/RT2interactive
+ln -sf /usr/local/MCRT2/bin/RT2mc           /usr/local/bin/RT2mc
+ln -sf /usr/local/MCRT2/bin/RT2moduleTester /usr/local/bin/RT2moduleTester
+ln -sf /usr/local/MCRT2/bin/RT2viewer       /usr/local/bin/RT2viewer
+
+ln -sf /usr/local/MCRT2/RT2interface/RT2dicom    /usr/local/bin/RT2dicom
+ln -sf /usr/local/MCRT2/RT2interface/RT2fluka    /usr/local/bin/RT2fluka
+ln -sf /usr/local/MCRT2/RT2interface/RT2fsource  /usr/local/bin/RT2fsource
+ln -sf /usr/local/MCRT2/RT2interface/RT2geant4   /usr/local/bin/RT2geant4
+ln -sf /usr/local/MCRT2/RT2interface/RT2neutron  /usr/local/bin/RT2neutron
+ln -sf /usr/local/MCRT2/RT2interface/RT2nifti    /usr/local/bin/RT2nifti
+
+exit 0
