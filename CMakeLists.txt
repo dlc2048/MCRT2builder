@@ -511,7 +511,7 @@ add_subdirectory(mcutil)
 #add_subdirectory( RT2moduleTester )
 
 # Interface
-#add_subdirectory( RT2interface    )
+add_subdirectory( MCRT2interface    )
 
 # main
 add_subdirectory( RT2builder      )
