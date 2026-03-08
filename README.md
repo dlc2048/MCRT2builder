@@ -4,7 +4,7 @@ Ray Tracing acclerated Radiation Transport Monte Carlo, RT2, geometry builder st
 ## Features
 - CSG world generator for the RT2 GPU-accelerated Monte Carlo
 
-- CSG to Mesh approximation, which optimized to the RTcore tracing
+- CSG to Mesh approximation, which optimized to the RTcore architecture
 
 Cross-platform support:
  - Windows 10 

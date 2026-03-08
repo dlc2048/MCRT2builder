@@ -2,6 +2,7 @@
 
 #include <type_traits>
 #include <array>
+#include <cmath>
 #include <assert.h>
 
 
