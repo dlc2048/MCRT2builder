@@ -55,11 +55,11 @@ cmake3-gui is recommended
 
 ##### Windows
 
-cmake -DVCPKG_PATH ${vcpkg_path} -DOptiX_INSTALL_DIR ${optix_path} -DBUILD_SHARED_LIBS
+cmake ../ -DVCPKG_PATH=${vcpkg_path} -DOptiX_INSTALL_DIR=${optix_path} -DBUILD_SHARED_LIBS=1
 
 ##### Linux 
 
-cmake3 -DOptiX_INSTALL_DIR ${optix_path} -DBUILD_SHARED_LIBS ../
+cmake ../ -DOptiX_INSTALL_DIR=${optix_path} -DBUILD_SHARED_LIBS=1
 
 #### Build
 

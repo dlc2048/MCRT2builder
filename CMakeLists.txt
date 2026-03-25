@@ -160,7 +160,7 @@ find_package(CUDA 11.0 REQUIRED)
 # Find CGAL, GSL, and boost
 find_package(CGAL  REQUIRED)
 find_package(GSL   REQUIRED)
-find_package(Boost REQUIRED COMPONENTS interprocess)
+find_package(Boost REQUIRED)
 
 # CUDA 11.7 adds support for OptiX targetted input files.
 if( CUDA_VERSION VERSION_GREATER_EQUAL 11.7 )
