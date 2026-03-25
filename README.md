@@ -67,7 +67,7 @@ make
 
 cd ..
 
-export MCRT2_HOME=$(pwd)
+export MCRT2_HOME=${pwd}
 
 ##### Windows
 
@@ -76,7 +76,7 @@ Open build/MCRT2.sln in Visual Studio
 Build the solution
 
 Set environment variable:
-MCRT2_HOME = $(RT2QMD_home_directory)
+MCRT2_HOME=${MCRT2builder home directory}
 
 #### (optional) Python interface
 
