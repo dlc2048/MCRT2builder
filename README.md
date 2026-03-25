@@ -23,15 +23,13 @@ Cross-platform support:
 
  - GTX 1660 super, Nvidia RTX 4060 ti, Nvidia RTX 4090 tested
 
-- **OptiX 7**: 
+- **OptiX 7**: Nvidia Ray-Tracing engine (tested on 7.6.0)
 
 - **GSL**: GNU Scientific Library
 
 - **CGAL**: The Computational Geometry Algorithms Library, must be installed in vcpkg (tested on 6.0.1)
 
-- **OPENGL**: Open Graphics Library
-
-- **GLFW**: Nvidia Ray-Tracing engine (tested on 7.6.0)
+- **GLFW**: Open Source, multi-platform library for OpenGL
 
 - (Windows) **vcpkg**: Microsoft package manager
 
