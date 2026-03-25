@@ -102,8 +102,8 @@ Apache-2.0 License. See **LICENSE** for details
 
 ## Citing This Method
 
-C.-M. Lee, T. Kim , and S.-J. Ye, “Ray-Tracing Acceleration Technique for Monte Carlo Radiation 
-Transport in Ubiquitous Geometry,” Available at SSRN 5225583 (Under review).
+Lee, Chang-Min, Taewan Kim, and Sung-Joon Ye. "Ray-Tracing Acceleration Technique for Monte Carlo 
+Radiation Transport in Ubiquitous Geometry." Computer Physics Communications (2026): 110134.
 
 ## Contact
 
