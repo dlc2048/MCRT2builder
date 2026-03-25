@@ -33,7 +33,7 @@ Cross-platform support:
 
 - **GLFW**: Nvidia Ray-Tracing engine (tested on 7.6.0)
 
-- **vcpkg**: Microsoft package manager
+- (Windows) **vcpkg**: Microsoft package manager
 
 - (Optional) **Python3** >= 3.8 (tested: 3.8.10, 3.8.20)
 
@@ -53,15 +53,13 @@ cd build
 
 cmake3-gui is recommended
 
-cmake3 ../
+##### Windows
 
-(error raised) set VCPKG_PATH to vcpkg home directory
+cmake -DVCPKG_PATH ${vcpkg_path} -DOptiX_INSTALL_DIR ${optix_path} -DBUILD_SHARED_LIBS
 
-(error raised) set OptiX_DIR to OptiX home directory
+##### Linux 
 
-(error raised) set OptiX_INCLUDE to ${OptiX_DIR}/include
-
-option BUILD_SHARED_LIBS must be selected (static compile is not allowed in RT2)
+cmake3 -DOptiX_INSTALL_DIR ${optix_path} -DBUILD_SHARED_LIBS ../
 
 #### Build
 

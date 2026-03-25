@@ -20,35 +20,24 @@
 
 set(MCRT2_VERSION "1.6.3")
 
-set(VCPKG_PATH 
-  ""
-  CACHE STRING "Vcpkg path"
+if ( WIN32 )
+  set(VCPKG_PATH 
+    "C:/vcpkg"
+    CACHE PATH "Vcpkg path"
   )
-
-set(CMAKE_TOOLCHAIN_FILE
-  "${VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake"
+  set(CMAKE_TOOLCHAIN_FILE
+    "${VCPKG_PATH}/scripts/buildsystems/vcpkg.cmake"
   )
-
-if( WIN32 )
   set(VCPKG_TARGET_TRIPLET
-  "x64-windows"
+    "x64-windows"
   )
   set(INSTALL_ROOT
-  ""
+    ""
   )
-else( WIN32 )
-  if( UNIX AND NOT APPLE )
-    set(VCPKG_TARGET_TRIPLET
-    "x64-linux"
-    )
-    set(INSTALL_ROOT
+else ( WIN32 )
+  set(INSTALL_ROOT
     "/usr/local/MCRT2/"
-    )
-  else()
-    set(VCPKG_TARGET_TRIPLET
-    "x64-osx"
-    )
-  endif()
+  )
 endif()
   
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
@@ -522,7 +511,7 @@ add_subdirectory( RT2viewer       )
 # packaging
 add_subdirectory( packaging       )
 
-# add_subdirectory( external/semver )
+add_subdirectory( external/semver )
 
 # version
 configure_file(
